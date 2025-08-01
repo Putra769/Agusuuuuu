@@ -43,5 +43,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   typeWriter();
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const audio = document.getElementById("bg-music");
+  // Otomatis mute saat mulai
+  audio.muted = true;
+
+  // Klik sekali untuk unmute
+  audio.addEventListener("click", () => {
+    audio.muted = !audio.muted;
+  });
+});
 
 
