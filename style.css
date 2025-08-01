@@ -94,4 +94,15 @@ body {
 .light-mode .social-links a:hover {
   background: rgba(0, 0, 0, 0.2);
 }
-    
+#typing-name {
+  border-right: 2px solid #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: white; }
+}
