@@ -22,3 +22,8 @@ for (let i = 0; i < 20; i++) {
     icon.style.animationDuration = (Math.random() * 10 + 10) + 's';
     iconContainer.appendChild(icon);
 }
+// Toggle Tema
+document.getElementById('toggle-theme').addEventListener('click', () => {
+  document.body.classList.toggle('light-mode');
+});
+
