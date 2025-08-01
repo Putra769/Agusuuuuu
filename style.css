@@ -46,4 +46,43 @@ body {
     text-decoration: none;
     color: #fff;
     font-weight:
+    /* Tombol toggle tema */
+#toggle-theme {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 14px;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  cursor: pointer;
+  z-index: 999;
+  backdrop-filter: blur(5px);
+  transition: background 0.3s;
+}
+
+#toggle-theme:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.light-mode {
+  background: linear-gradient(to right, #ffffff, #f0f0f0);
+  color: #222;
+}
+
+.light-mode .profile-card {
+  background: rgba(0, 0, 0, 0.05);
+  color: #000;
+}
+
+.light-mode .social-links a {
+  background: rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+.light-mode .social-links a:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
     
