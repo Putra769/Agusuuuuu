@@ -115,4 +115,17 @@ audio {
   left: 10px;
   z-index: 999;
 }
-    
+ #clock {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-family: 'Courier New', monospace;
+  font-size: 20px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 12px;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
