@@ -106,3 +106,13 @@ body {
   0%, 100% { border-color: transparent; }
   50% { border-color: white; }
 }
+audio {
+  display: none;
+}
+audio {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 999;
+}
+    
