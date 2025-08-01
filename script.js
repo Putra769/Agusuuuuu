@@ -28,5 +28,20 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.toggle('light-mode');
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const text = "Putra Gana";
+  const target = document.getElementById("typing-name");
+  let index = 0;
+
+  function typeWriter() {
+    if (index < text.length) {
+      target.innerHTML += text.charAt(index);
+      index++;
+      setTimeout(typeWriter, 150);
+    }
+  }
+
+  typeWriter();
+});
 
 
